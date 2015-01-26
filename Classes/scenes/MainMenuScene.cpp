@@ -47,6 +47,15 @@ bool MainMenuScene::init()
     auto menu = Menu::create(closeItem, NULL);
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
+    
+    auto label = Label::createWithTTF("Home screen", "fonts/Marker Felt.ttf", 24);
+    
+    // position the label on the center of the screen
+    label->setPosition(Vec2(origin.x + visibleSize.width/2,
+                            origin.y + visibleSize.height - label->getContentSize().height));
+    
+    // add the label as a child to this layer
+    this->addChild(label, 1);
 
     
     return true;
@@ -55,5 +64,10 @@ bool MainMenuScene::init()
 
 void MainMenuScene::homeButtonCallback(Ref* pSender)
 {
-
+    auto director = Director::getInstance();
+    auto scene = TestsScene::createScene();
+    auto color = Color3B(0,0,0);
+    auto transition = TransitionFade::create(0.5, scene, color);
+    
+    director->replaceScene(transition);
 }

@@ -2,6 +2,7 @@
 #define __TESTS_SCENE_H__
 
 #include "cocos2d.h"
+#include "MainMenuScene.h"
 
 class TestsScene : public cocos2d::Layer
 {
@@ -13,7 +14,7 @@ public:
     virtual bool init();
     
     // a selector callback
-    void menuCloseCallback(cocos2d::Ref* pSender);
+    void returnHomeCallback(cocos2d::Ref* pSender);
     
     // implement the "static create()" method manually
     CREATE_FUNC(TestsScene);
