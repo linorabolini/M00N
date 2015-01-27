@@ -4,16 +4,10 @@ USING_NS_CC;
 
 Scene* TestsScene::createScene()
 {
-    // 'scene' is an autorelease object
     auto scene = Scene::create();
-    
-    // 'layer' is an autorelease object
     auto layer = TestsScene::create();
 
-    // add layer as a child to scene
     scene->addChild(layer);
-
-    // return the scene
     return scene;
 }
 
@@ -52,6 +46,8 @@ bool TestsScene::init()
     // add the label as a child to this layer
     this->addChild(label, 1);
     
+    this->runTests();
+    
     return true;
 }
 
@@ -64,4 +60,16 @@ void TestsScene::returnHomeCallback(Ref* pSender)
     auto transition = TransitionFade::create(0.5, scene, color);
     
     director->replaceScene(transition);
+}
+
+void TestsScene::runTests()
+{
+    TestRunner tr;
+    ExampleSuite ex;
+    
+    // add tests
+    tr.add(&ex);
+    
+    // run tests
+    tr.run();
 }

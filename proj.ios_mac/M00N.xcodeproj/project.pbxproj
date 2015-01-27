@@ -11,6 +11,12 @@
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		221D38861A7704A100961CB7 /* TestRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221D38841A7704A100961CB7 /* TestRunner.cpp */; };
+		221D38871A7704A100961CB7 /* TestRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221D38841A7704A100961CB7 /* TestRunner.cpp */; };
+		221D38931A770F4200961CB7 /* ExampleSuite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221D38911A770F4200961CB7 /* ExampleSuite.cpp */; };
+		221D38941A770F4200961CB7 /* ExampleSuite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221D38911A770F4200961CB7 /* ExampleSuite.cpp */; };
+		221D38961A7710C300961CB7 /* Suite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221D38951A7710C300961CB7 /* Suite.cpp */; };
+		221D38971A7710C300961CB7 /* Suite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 221D38951A7710C300961CB7 /* Suite.cpp */; };
 		22D37C1E1A75789A00802AF8 /* TestsScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D37C1A1A75789A00802AF8 /* TestsScene.cpp */; };
 		22D37C1F1A75789A00802AF8 /* TestsScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D37C1A1A75789A00802AF8 /* TestsScene.cpp */; };
 		22D37C221A757C4800802AF8 /* MainMenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22D37C211A757C4800802AF8 /* MainMenuScene.cpp */; };
@@ -107,6 +113,12 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* M00N iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "M00N iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		221D38811A76F45300961CB7 /* Suite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Suite.h; path = ../Tests/Suite.h; sourceTree = "<group>"; };
+		221D38841A7704A100961CB7 /* TestRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestRunner.cpp; path = ../Tests/TestRunner.cpp; sourceTree = "<group>"; };
+		221D38851A7704A100961CB7 /* TestRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestRunner.h; path = ../Tests/TestRunner.h; sourceTree = "<group>"; };
+		221D38911A770F4200961CB7 /* ExampleSuite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleSuite.cpp; sourceTree = "<group>"; };
+		221D38921A770F4200961CB7 /* ExampleSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleSuite.h; sourceTree = "<group>"; };
+		221D38951A7710C300961CB7 /* Suite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Suite.cpp; path = ../Tests/Suite.cpp; sourceTree = "<group>"; };
 		22D37C1A1A75789A00802AF8 /* TestsScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestsScene.cpp; sourceTree = "<group>"; };
 		22D37C1B1A75789A00802AF8 /* TestsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestsScene.h; sourceTree = "<group>"; };
 		22D37C201A757C4800802AF8 /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
@@ -235,6 +247,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		221D387F1A76F3D000961CB7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				221D38901A770F4200961CB7 /* suites */,
+				221D38951A7710C300961CB7 /* Suite.cpp */,
+				221D38811A76F45300961CB7 /* Suite.h */,
+				221D38841A7704A100961CB7 /* TestRunner.cpp */,
+				221D38851A7704A100961CB7 /* TestRunner.h */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		221D38901A770F4200961CB7 /* suites */ = {
+			isa = PBXGroup;
+			children = (
+				221D38911A770F4200961CB7 /* ExampleSuite.cpp */,
+				221D38921A770F4200961CB7 /* ExampleSuite.h */,
+			);
+			name = suites;
+			path = ../Tests/suites;
+			sourceTree = "<group>";
+		};
 		22D37C171A75789A00802AF8 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +283,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				221D387F1A76F3D000961CB7 /* Tests */,
 				46880B8319C43A87006E1F66 /* Classes */,
 				46880B7519C43A67006E1F66 /* Resources */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
@@ -500,11 +535,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				221D38861A7704A100961CB7 /* TestRunner.cpp in Sources */,
 				22D37C1E1A75789A00802AF8 /* TestsScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				22D37C221A757C4800802AF8 /* MainMenuScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				221D38931A770F4200961CB7 /* ExampleSuite.cpp in Sources */,
+				221D38961A7710C300961CB7 /* Suite.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,8 +552,11 @@
 			files = (
 				22D37C1F1A75789A00802AF8 /* TestsScene.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				221D38871A7704A100961CB7 /* TestRunner.cpp in Sources */,
 				22D37C231A757C4800802AF8 /* MainMenuScene.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+				221D38941A770F4200961CB7 /* ExampleSuite.cpp in Sources */,
+				221D38971A7710C300961CB7 /* Suite.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
