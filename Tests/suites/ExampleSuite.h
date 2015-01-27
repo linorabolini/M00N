@@ -18,7 +18,8 @@ public:
     ExampleSuite();
     
 public:
-    void test_1();
+    void test_of_tests();
+    void test_vectors();
 };
 
 #endif /* defined(__M00N__ExampleSuite__) */

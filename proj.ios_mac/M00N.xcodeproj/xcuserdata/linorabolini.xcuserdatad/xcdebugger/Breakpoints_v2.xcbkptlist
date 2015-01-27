@@ -56,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Tests/suites/ExampleSuite.cpp"
-            timestampString = "444019547.567476"
+            timestampString = "444022449.951912"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "ExampleSuite::test_1()"
             landmarkType = "5">
          </BreakpointContent>
@@ -72,7 +72,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Tests/suites/ExampleSuite.cpp"
-            timestampString = "444013129.851279"
+            timestampString = "444022449.951912"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
